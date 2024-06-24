@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="blouse.css">
+    <link rel="icon" href="image/icon.png" type="image/png">
+    <title>Blouse ⋆₊˚⊹♡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="banner">
+    <img src="image/banner.png" alt="Banner Image">
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="#">Women Tops</a>
+            <div class="dropdown">
+                <a href="blouse.html">Blouse</a>
+                <a href="dress.html">Dress</a>
+                <a href="shirt.html">Shirt</a>
+		<a href="hoodie.html">Hoodie</a>
+                <a href="sweatshirt.html">Sweatshirt</a>
+		<a href="jacket.html">Jacket</a>
+                <a href="blazer.html">Blazer</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">Women Bottoms</a>
+            <div class="dropdown">
+                <a href="skirt.html">Skirt</a>
+                <a href="jeans.html">Jeans</a>
+            </div>
+        </li>
+        <li>
+            <a href="#">Accessories</a>
+            <div class="dropdown">
+		<a href="bag.html">Hand Bag</a>
+		<a href="purse.html">Purse</a>
+                <a href="hat.html">Hat</a>
+            </div>
+        </li>
+        	<li>
+        <a href="#">About Us</a>
+            <div class="dropdown">
+                <a href="history.html">Background</a>
+                <a href="profile.html">Our Profile</a>
+		<a href="faq.html">FAQ</a>
+		<a href="contact.html">Contact</a>
+            </div>
+	</li>
+		<li>
+        <a href="#">More</a>
+            <div class="dropdown">
+                <a href="orderform.html">Order Form</a>
+		<a href="feedbackform.html">Feedback Form</a>
+            </div>
+	</li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Explore Our Blouses Collection ──★ ˙ ̟🐇 !!</h1>
+    <section class="product-details">
+        <div class="product">
+            <img src="image/blouse1.jpeg" alt="Blouse 1 Image">
+            <p>FloRal Blouse</p>
+            <p>Price: RM 59.90</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse2.jpeg" alt="Blouse 2 Image">
+            <p>CoQuette Blouse</p>
+            <p>Price: RM 69.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse3.jpeg" alt="Blouse 3 Image">
+            <p>DaiSy Blouse</p>
+            <p>Price: RM 49.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse4.jpeg" alt="Blouse 4 Image">
+            <p>SalSa Blouse</p>
+            <p>Price: RM 79.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse5.jpeg" alt="Blouse 3 Image">
+            <p>MawAr Blouse</p>
+            <p>Price: RM 59.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse6.jpeg" alt="Blouse 3 Image">
+            <p>PoLka Blouse</p>
+            <p>Price: RM 89.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse7.jpeg" alt="Blouse 3 Image">
+            <p>KiKo Blouse</p>
+            <p>Price: RM 79.90</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse8.jpeg" alt="Blouse 3 Image">
+            <p>DollY Blouse</p>
+            <p>Price: RM 99.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+        <div class="product">
+            <img src="image/blouse9.jpeg" alt="Blouse 3 Image">
+            <p>RoSy Blouse</p>
+            <p>Price: RM 89.00</p>
+            <a href="orderform.html">Add to Cart</a>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Bushbubbs Clothing Sdn. Bhd. All Rights Reserved.</p>
+</footer>
+
+<button class="up-button" onclick="scrollToTop()">UP</button>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.addEventListener('mousemove', (e) => {
+        const glitter = document.createElement('div');
+        glitter.className = 'glitter';
+        glitter.style.left = `${e.clientX}px`;
+        glitter.style.top = `${e.clientY}px`;
+        document.body.appendChild(glitter);
+        setTimeout(() => {
+            glitter.remove();
+        }, 1000); 
+    });
+
+    window.addEventListener('scroll', () => {
+        const button = document.querySelector('.up-button');
+        if (window.scrollY > 200) { 
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
